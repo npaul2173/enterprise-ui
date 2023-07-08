@@ -80,3 +80,5 @@ To learn more about React Native, take a look at the following resources:
 
 sudo keytool -genkey -v -keystore revolt-app.keystore -alias revolt-app-key-alias -keyalg RSA -keysize 2048 -validity 10000
 revolt-app-password
+
+yarn android --mode release

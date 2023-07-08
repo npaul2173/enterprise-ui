@@ -68,3 +68,4 @@ yarn-error.log
 # env file
 *.env
 !demo.env
+*settings.json

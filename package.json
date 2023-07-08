@@ -9,7 +9,8 @@
     "start": "react-native start",
     "test": "jest",
     "build": "npx react-native build-android --mode=release",
-    "remove": "adb uninstall com.revolt"
+    "remove": "adb uninstall com.revolt",
+    "generate-enum": "node src/scripts/fontEnumMaker.js"
   },
   "dependencies": {
     "@dyst/native": "^0.0.5",
@@ -18,7 +19,8 @@
     "react": "18.2.0",
     "react-native": "0.72.1",
     "react-native-shadow-2": "^7.0.8",
-    "react-native-svg": "^13.10.0"
+    "react-native-svg": "^13.10.0",
+    "react-native-vector-icons": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -29,11 +31,14 @@
     "@tsconfig/react-native": "^3.0.0",
     "@types/metro-config": "^0.76.3",
     "@types/react": "^18.0.24",
+    "@types/react-native-vector-icons": "^6.4.13",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "eslint": "^8.19.0",
+    "fs": "^0.0.1-security",
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.76.5",
+    "path": "^0.12.7",
     "prettier": "^2.4.1",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"

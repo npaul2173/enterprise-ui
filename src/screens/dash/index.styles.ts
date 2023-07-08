@@ -9,10 +9,4 @@ export const useStyles = themeStyles.create(({theme}) => ({
     // backgroundColor: '#efefef',
     backgroundColor: theme.component.backgroundColor,
   },
-  title: {
-    fontSize: 40,
-    color: 'black',
-    letterSpacing: -2,
-    fontFamily: 'Inter-Bold',
-  },
 }));
