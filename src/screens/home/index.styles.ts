@@ -15,4 +15,9 @@ export const useStyles = themeStyles.create(({theme}) => ({
     letterSpacing: -2,
     fontFamily: 'Inter-Bold',
   },
+  box: {
+    width: 200,
+    height: 200,
+    backgroundColor: theme.palette.primaryColor,
+  },
 }));

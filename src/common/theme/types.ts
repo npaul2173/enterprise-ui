@@ -3,6 +3,8 @@ export interface ThemeStyles {
     palette: {
       primaryColor: string;
       secondaryColor: string;
+      white: string;
+      black: string;
     };
     component: {
       backgroundColor: string;

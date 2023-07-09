@@ -21,8 +21,8 @@
 		FBC29A92E4C044CD986CF604 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6565C43D31164F86813A0D7F /* Inter-Regular.ttf */; };
 		C5081D222D7946E9B3F3B082 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69ABC46A215D4EA4A5049013 /* Inter-SemiBold.ttf */; };
 		48F55565842C4E61AB2140F4 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB96F3297E45490292BD1027 /* Inter-Thin.ttf */; };
-		34A9C71B52B54FF2B8884D35 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2F0474B3B749EEBDE3A2DE /* icomoon.ttf */; };
-		A4B4E77CF5E6461B95AAF37D /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = 424F457EE0F547B2B19DE582 /* selection.json */; };
+		67106722F8014E49866F900B /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */; };
+		E4E8CB993793491F9DF43D62 /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = BDF1636242754021859AA829 /* selection.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		6565C43D31164F86813A0D7F /* Inter-Regular.ttf */ = {isa = PBXFileReference; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		69ABC46A215D4EA4A5049013 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		EB96F3297E45490292BD1027 /* Inter-Thin.ttf */ = {isa = PBXFileReference; name = "Inter-Thin.ttf"; path = "../src/assets/fonts/Inter-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ED2F0474B3B749EEBDE3A2DE /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../src/assets/fonts/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		424F457EE0F547B2B19DE582 /* selection.json */ = {isa = PBXFileReference; name = "selection.json"; path = "../src/assets/fonts/selection.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../src/assets/fonts/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDF1636242754021859AA829 /* selection.json */ = {isa = PBXFileReference; name = "selection.json"; path = "../src/assets/fonts/selection.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +177,8 @@
 				6565C43D31164F86813A0D7F /* Inter-Regular.ttf */,
 				69ABC46A215D4EA4A5049013 /* Inter-SemiBold.ttf */,
 				EB96F3297E45490292BD1027 /* Inter-Thin.ttf */,
-				ED2F0474B3B749EEBDE3A2DE /* icomoon.ttf */,
-				424F457EE0F547B2B19DE582 /* selection.json */,
+				CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */,
+				BDF1636242754021859AA829 /* selection.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -287,8 +287,8 @@
 				FBC29A92E4C044CD986CF604 /* Inter-Regular.ttf in Resources */,
 				C5081D222D7946E9B3F3B082 /* Inter-SemiBold.ttf in Resources */,
 				48F55565842C4E61AB2140F4 /* Inter-Thin.ttf in Resources */,
-				34A9C71B52B54FF2B8884D35 /* icomoon.ttf in Resources */,
-				A4B4E77CF5E6461B95AAF37D /* selection.json in Resources */,
+				67106722F8014E49866F900B /* icomoon.ttf in Resources */,
+				E4E8CB993793491F9DF43D62 /* selection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

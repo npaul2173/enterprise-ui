@@ -6,8 +6,10 @@ const lightTheme: ThemeStyles = {
       backgroundColor: 'white',
     },
     palette: {
-      primaryColor: '#440044',
+      primaryColor: '#0066FF',
       secondaryColor: '#000088',
+      white: '#ffffff',
+      black: '#000000',
     },
   },
 };
