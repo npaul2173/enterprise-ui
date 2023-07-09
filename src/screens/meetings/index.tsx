@@ -1,13 +1,12 @@
 import React from 'react';
-import {Button, StatusBar, Text, View} from 'react-native';
+import {StatusBar, Text, View} from 'react-native';
 import {IconView} from '../../common/components/Icon';
 import {IconSetEnum} from '../../common/components/Icon/enums';
 import {useStyles} from './index.styles';
-import {useNavigation} from '@react-navigation/native';
 
-export const Home = ({navigation}) => {
+export const Meetings = () => {
   const {styles} = useStyles({});
-  // const navigation = useNavigation();
+
   return (
     <>
       <StatusBar backgroundColor={'white'} />
@@ -16,12 +15,6 @@ export const Home = ({navigation}) => {
 
         <Text style={styles.title}>Today</Text>
 
-        <Button
-          title="press"
-          onPress={() => {
-            navigation.openDrawer();
-          }}
-        />
         <View>
           <Text>Intel</Text>
           <Text>Category overview:</Text>
