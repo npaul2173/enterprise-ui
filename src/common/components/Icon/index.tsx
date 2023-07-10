@@ -5,8 +5,14 @@ import {IconSetEnum} from './enums';
 import {themeStyles} from '../../theme';
 const Icon = createIconSetFromIcoMoon(iconsConfig);
 
+type IconSetEnumValue = keyof typeof IconSetEnum;
+type IconSetEnumWithoutPrefix = `${Extract<IconSetEnumValue, string>}`;
+type IconSetEnumWithoutPrefixEnum = {
+  [K in IconSetEnumValue as IconSetEnumWithoutPrefix]: IconSetEnumWithoutPrefix;
+};
+
 interface IconViewProps {
-  name: IconSetEnum;
+  name: keyof IconSetEnumWithoutPrefixEnum;
   size?: number;
   color?: string;
 }
@@ -16,7 +22,7 @@ export const IconView: React.FC<IconViewProps> = ({name, size, color}) => {
   return (
     <>
       <Icon
-        name={name ? name : IconSetEnum.circleMenu}
+        name={name ? IconSetEnum[name] : IconSetEnum['circleMenu']}
         size={size ? size : 20}
         color={color ? color : theme.palette.black}
       />

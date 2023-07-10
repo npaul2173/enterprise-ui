@@ -21,16 +21,10 @@ function DetailsScreen() {
   );
 }
 
-function HomeScreen({navigation}) {
-  console.log(navigation);
-
+function HomeScreen() {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Home Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
     </View>
   );
 }
@@ -54,12 +48,14 @@ function CustomDrawerContent(props) {
 
 export const Router = () => {
   return (
-    <MyDrawer />
-    // <Stack.Navigator initialRouteName="Home">
-    //   <Stack.Screen name="Home2" component={MyDrawer} />
-    //   <Stack.Screen name="Home" component={HomeScreen} />
-    //   <Stack.Screen name="Details" component={DetailsScreen} />
-    // </Stack.Navigator>
+    // <MyDrawer />
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{headerShown: false}}>
+      {/* <Stack.Screen name="Home2" component={MyDrawer} /> */}
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+    </Stack.Navigator>
   );
 };
 
