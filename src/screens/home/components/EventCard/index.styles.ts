@@ -30,7 +30,12 @@ export const useStyles = themeStyles.create(({theme}) => ({
     color: theme.palette.grey003,
     marginRight: 5,
   },
-  reportView: {letterSpacing: 1.85, fontSize: 10, marginRight: 10},
+  reportView: {
+    color: theme.palette.grey003,
+    letterSpacing: 1.85,
+    fontSize: 10,
+    marginRight: 10,
+  },
   reportSection: {
     flexDirection: 'row',
     marginTop: 40,

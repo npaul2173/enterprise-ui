@@ -5,8 +5,11 @@ export const useStyles = themeStyles.create(({theme}) => ({
     flex: 1,
     backgroundColor: theme.component.backgroundColor,
   },
+  meetingsContainer: {
+    paddingHorizontal: 20,
+  },
   eventContainer: {
     paddingHorizontal: 20,
   },
-  headerText: {fontSize: 20, padding: 15, paddingLeft: 45},
+  headerText: {fontSize: 25, padding: 15, letterSpacing: -1, paddingLeft: 45},
 }));

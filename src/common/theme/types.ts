@@ -5,6 +5,7 @@ export interface ThemeStyles {
       secondaryColor: string;
       white: string;
       black: string;
+      seaGreen: string;
       grey005: string;
       grey003: string;
     };

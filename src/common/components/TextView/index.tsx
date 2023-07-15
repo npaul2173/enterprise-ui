@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {StyleProp, Text, TextStyle} from 'react-native';
 import {TextProps} from 'react-native';
 import {FontFamilyEnum} from './enum';
+import {themeStyles} from '../../theme';
 
 type FontFamilyValue = keyof typeof FontFamilyEnum;
 type FontFamilyWithoutPrefix = `${Extract<FontFamilyValue, string>}`;
@@ -21,7 +22,9 @@ export const TextView: React.FC<TextViewProps> = ({
   variant,
   ...props
 }) => {
+  const {palette} = themeStyles.useTheme();
   const textStyles: StyleProp<TextStyle> = [
+    {color: palette.black},
     style ? style : {},
     {fontFamily: variant ? FontFamilyEnum[variant] : FontFamilyEnum.regular},
   ];

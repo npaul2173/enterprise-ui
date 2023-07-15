@@ -15,6 +15,7 @@ const lightTheme: ThemeStyles = {
       grey003: '#949494',
       white: '#ffffff',
       black: '#000000',
+      seaGreen: '#2BD1B3',
     },
   },
 };
