@@ -11,7 +11,7 @@ export function MainDrawer() {
       screenOptions={{
         headerShown: false,
         overlayColor: 'transparent',
-        drawerStyle: {backgroundColor: 'transparent'},
+        drawerStyle: {backgroundColor: 'transparent', width: 300},
         drawerType: 'front',
       }}
       drawerContent={props => <CustomDrawerContent {...props} />}>
