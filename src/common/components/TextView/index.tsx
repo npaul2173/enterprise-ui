@@ -23,7 +23,7 @@ export const TextView: React.FC<TextViewProps> = ({
 }) => {
   const {palette} = themeStyles.useTheme();
   const textStyles: StyleProp<TextStyle> = [
-    {color: palette.black},
+    {color: palette.black, letterSpacing: -0.7},
     style ? style : {},
     {fontFamily: variant ? FontFamilyEnum[variant] : FontFamilyEnum.regular},
   ];
