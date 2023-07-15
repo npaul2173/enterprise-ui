@@ -1,18 +1,16 @@
+import {IconView} from '@common/components/Icon';
+import {TextView} from '@common/components/TextView';
 import React from 'react';
 import {View} from 'react-native';
-import {Shadow} from 'react-native-shadow-2';
-import {IconView} from '../../../../common/components/Icon';
-import {TextView} from '../../../../common/components/TextView';
-import {useCommonStyles} from '../../../../common/style/commonStyles';
-import {useStyles} from './index.styles';
 import {HStack, Stack} from 'react-native-flex-layout';
+import {Shadow} from 'react-native-shadow-2';
+import {useStyles} from './index.styles';
 
 interface MeetingCardProps {
   index: number;
 }
-export const MeetingCard: React.FC = () => {
+export const MeetingCard: React.FC<MeetingCardProps> = () => {
   const {styles, cx, theme} = useStyles({});
-  const {styles: commonStyles} = useCommonStyles({});
 
   return (
     <Shadow

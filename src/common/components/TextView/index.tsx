@@ -1,8 +1,7 @@
-import React, {PureComponent} from 'react';
-import {StyleProp, Text, TextStyle} from 'react-native';
-import {TextProps} from 'react-native';
+import React from 'react';
+import {StyleProp, Text, TextProps, TextStyle} from 'react-native';
 import {FontFamilyEnum} from './enum';
-import {themeStyles} from '../../theme';
+import {themeStyles} from '@common/theme';
 
 type FontFamilyValue = keyof typeof FontFamilyEnum;
 type FontFamilyWithoutPrefix = `${Extract<FontFamilyValue, string>}`;

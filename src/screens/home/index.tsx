@@ -1,21 +1,11 @@
 import React from 'react';
-import {
-  Button,
-  FlatList,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-} from 'react-native';
-import {IconView} from '../../common/components/Icon';
-import {IconSetEnum} from '../../common/components/Icon/enums';
-import {useStyles} from './index.styles';
-import {useNavigation} from '@react-navigation/native';
-import {TextView} from '../../common/components/TextView';
-import {EventCard} from './components/EventCard';
+import {Button, ScrollView, View} from 'react-native';
+import {HStack, Stack} from 'react-native-flex-layout';
 import {useCommonStyles} from '../../common/style/commonStyles';
-import {HStack, Stack, VStack} from 'react-native-flex-layout';
+import {EventCard} from './components/EventCard';
 import {MeetingCard} from './components/MeetingCard';
+import {useStyles} from './index.styles';
+import {TextView} from '@common/components/TextView';
 
 export const Home = ({navigation}: any) => {
   const {styles, cx} = useStyles({});
@@ -51,8 +41,8 @@ export const Home = ({navigation}: any) => {
           {meetings.map((_, index) => {
             return (
               <Stack spacing={20} key={index} divider={<View />}>
-                <MeetingCard />
-                <MeetingCard />
+                <MeetingCard index={index} />
+                <MeetingCard index={index} />
               </Stack>
             );
           })}

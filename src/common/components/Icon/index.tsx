@@ -2,7 +2,7 @@ import React from 'react';
 import {createIconSetFromIcoMoon} from 'react-native-vector-icons';
 import iconsConfig from '../../../assets/fonts/selection.json';
 import {IconSetEnum} from './enums';
-import {themeStyles} from '../../theme';
+import {themeStyles} from '@common/theme';
 const Icon = createIconSetFromIcoMoon(iconsConfig);
 
 type IconSetEnumValue = keyof typeof IconSetEnum;

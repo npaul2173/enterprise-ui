@@ -1,7 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React, {PureComponent} from 'react';
-import {MainDrawer} from '../DrawerNavigation';
 import {Home} from '../../screens/home';
+import {MainDrawer} from '../DrawerNavigation';
 
 const Stack = createNativeStackNavigator();
 

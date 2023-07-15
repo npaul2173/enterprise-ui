@@ -4,6 +4,7 @@ const lightTheme: ThemeStyles = {
   theme: {
     borderRadius: {
       default: 2,
+      imageView: 5,
     },
     component: {
       backgroundColor: '#F8F8F8',

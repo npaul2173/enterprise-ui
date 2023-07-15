@@ -10,7 +10,8 @@ export interface ThemeStyles {
       grey003: string;
     };
     borderRadius: {
-      default: 2;
+      default: number;
+      imageView: number;
     };
     component: {
       backgroundColor: string;

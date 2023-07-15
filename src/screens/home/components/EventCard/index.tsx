@@ -1,10 +1,10 @@
-import React, {PureComponent} from 'react';
-import {useStyles} from './index.styles';
-import {View, Text} from 'react-native';
-import {TextView} from '../../../../common/components/TextView';
+import React from 'react';
+import {View} from 'react-native';
 import {Shadow} from 'react-native-shadow-2';
-import {useCommonStyles} from '../../../../common/style/commonStyles';
-import {IconView} from '../../../../common/components/Icon';
+import {useStyles} from './index.styles';
+import {IconView} from '@common/components/Icon';
+import {TextView} from '@common/components/TextView';
+import {useCommonStyles} from '@common/style/commonStyles';
 
 export const EventCard: React.FC = () => {
   const {styles, cx, theme} = useStyles({});
