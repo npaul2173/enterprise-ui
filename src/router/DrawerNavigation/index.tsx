@@ -1,9 +1,10 @@
-import React, {PureComponent} from 'react';
-import {Home} from '../../screens/home';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {themeStyles} from 'common/theme';
+import React from 'react';
+import {themeStyles} from '@common/theme';
+import {Home} from '@screens/home';
 import {CustomDrawerContent} from './Custom';
 
+export const DRAWER_WIDTH = 320;
 const Drawer = createDrawerNavigator();
 
 export function MainDrawer() {
@@ -13,7 +14,7 @@ export function MainDrawer() {
       screenOptions={{
         headerShown: false,
         overlayColor: `${palette.grey003}55`,
-        drawerStyle: {width: 300},
+        drawerStyle: {width: DRAWER_WIDTH},
         drawerType: 'front',
       }}
       drawerContent={props => <CustomDrawerContent {...props} />}>

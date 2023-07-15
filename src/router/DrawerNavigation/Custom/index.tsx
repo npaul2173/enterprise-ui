@@ -2,6 +2,8 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {themeStyles} from '../../../common/theme';
 import {Header} from './Header';
+import {SlideButton} from './PushBackButton';
+import {DRAWER_WIDTH} from '..';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,9 +22,8 @@ const styles = StyleSheet.create({
 });
 
 export function CustomDrawerContent(props: any) {
-  const theme = themeStyles.useTheme();
   return (
-    <View style={{height: '100%'}}>
+    <View style={{height: '100%', width: DRAWER_WIDTH}}>
       <Header />
       {/* <DrawerContentScrollView {...props}>
           <DrawerItemList {...props} />
