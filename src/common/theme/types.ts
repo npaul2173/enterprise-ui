@@ -8,6 +8,7 @@ export interface ThemeStyles {
       seaGreen: string;
       grey005: string;
       grey003: string;
+      grey004: string;
     };
     borderRadius: {
       default: number;

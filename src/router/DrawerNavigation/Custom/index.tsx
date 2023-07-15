@@ -1,9 +1,10 @@
+import {DrawerItem, DrawerItemList} from '@react-navigation/drawer';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {themeStyles} from '../../../common/theme';
-import {Header} from './Header';
-import {SlideButton} from './PushBackButton';
 import {DRAWER_WIDTH} from '..';
+import {Header} from './Header';
+import {Messages} from './Messages';
+import {Divider, Flex, Spacer, Stack} from 'react-native-flex-layout';
 
 const styles = StyleSheet.create({
   container: {
@@ -23,19 +24,24 @@ const styles = StyleSheet.create({
 
 export function CustomDrawerContent(props: any) {
   return (
-    <View style={{height: '100%', width: DRAWER_WIDTH}}>
+    <Stack style={{height: '100%', width: DRAWER_WIDTH}}>
       <Header />
-      {/* <DrawerContentScrollView {...props}>
-          <DrawerItemList {...props} />
-          <DrawerItem
-            label="Close drawer"
-            onPress={() => props.navigation.closeDrawer()}
-          />
-          <DrawerItem
-            label="Toggle drawer"
-            onPress={() => props.navigation.toggleDrawer()}
-          />
-        </DrawerContentScrollView> */}
-    </View>
+      <Divider />
+
+      {/* <DrawerContentScrollView {...props}> */}
+      <DrawerItemList {...props} />
+      <DrawerItem
+        label="Close drawer"
+        onPress={() => props.navigation.closeDrawer()}
+      />
+      <DrawerItem
+        label="Toggle drawer"
+        onPress={() => props.navigation.toggleDrawer()}
+      />
+      <Divider />
+
+      {/* </DrawerContentScrollView> */}
+      <Messages />
+    </Stack>
   );
 }
