@@ -1,3 +1,5 @@
+![Example Image](resources/FRAME_HOLDER.png)
+
 # React Native Enterprise UI Showcase App
 
 The React Native Enterprise UI Showcase App is a cutting-edge mobile application project aimed at creating a visually stunning and user-friendly user interface (UI) for enterprise-level applications.
