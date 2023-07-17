@@ -9,7 +9,8 @@ export const useStyles = themeStyles.create(({theme}) => ({
     paddingTop: 20,
   },
   titleTextStyle: {
-    fontSize: 12,
+    fontSize: 10,
     letterSpacing: 5,
+    color: theme.palette.grey003,
   },
 }));

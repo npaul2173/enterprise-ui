@@ -15,6 +15,7 @@ export const useStyles = themeStyles.create(({theme}) => ({
     padding: 15,
     paddingLeft: 30,
     paddingRight: 40,
+    paddingTop: 30,
   },
   headerText: {fontSize: 25, letterSpacing: -1},
   subHeaderText: {

@@ -63,7 +63,11 @@ export const Home = ({navigation}: any) => {
                 divider={<View />}>
                 {meetings.map((_, index) => {
                   return (
-                    <Stack spacing={20} key={index} divider={<View />}>
+                    <Stack
+                      style={{paddingTop: 10}}
+                      spacing={20}
+                      key={index}
+                      divider={<View />}>
                       <MeetingCard isCurrent={index === 0} />
                       <MeetingCard />
                     </Stack>
