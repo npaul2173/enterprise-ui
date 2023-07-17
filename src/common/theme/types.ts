@@ -1,8 +1,9 @@
 export interface ThemeStyles {
   theme: {
     palette: {
-      primaryColor: string;
-      secondaryColor: string;
+      primary: string;
+      primaryLight: string;
+      secondary: string;
       white: string;
       black: string;
       seaGreen: string;

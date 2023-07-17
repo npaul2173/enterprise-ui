@@ -2,9 +2,8 @@ import {themeStyles} from '../../../../common/theme';
 
 export const useStyles = themeStyles.create(({theme}) => ({
   container: {
-    backgroundColor: theme.palette.white,
-    width: 180,
-    height: 180,
+    width: 170,
+    height: 170,
     padding: 20,
     borderRadius: theme.borderRadius.default,
   },
@@ -25,7 +24,6 @@ export const useStyles = themeStyles.create(({theme}) => ({
     borderRadius: 5,
     height: 40,
     width: 40,
-    borderColor: theme.palette.seaGreen,
     borderWidth: 1,
   },
 }));

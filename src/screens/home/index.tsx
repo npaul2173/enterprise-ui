@@ -59,13 +59,13 @@ export const Home = ({navigation}: any) => {
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <HStack
                 style={styles.meetingsContainer}
-                spacing={10}
+                spacing={5}
                 divider={<View />}>
                 {meetings.map((_, index) => {
                   return (
                     <Stack spacing={20} key={index} divider={<View />}>
-                      <MeetingCard index={index} />
-                      <MeetingCard index={index} />
+                      <MeetingCard isCurrent={index === 0} />
+                      <MeetingCard />
                     </Stack>
                   );
                 })}

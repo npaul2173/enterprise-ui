@@ -58,7 +58,7 @@ export const EventCard: React.FC = () => {
             </TextView>
             <IconView
               name="rightArrow"
-              color={theme.palette.primaryColor}
+              color={theme.palette.primary}
               size={12}
             />
           </View>
