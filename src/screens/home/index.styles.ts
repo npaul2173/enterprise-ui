@@ -11,5 +11,15 @@ export const useStyles = themeStyles.create(({theme}) => ({
   eventContainer: {
     paddingHorizontal: 20,
   },
-  headerText: {fontSize: 25, padding: 15, letterSpacing: -1, paddingLeft: 45},
+  todayHeaderContainer: {
+    padding: 15,
+    paddingLeft: 30,
+  },
+  headerText: {fontSize: 25, letterSpacing: -1},
+  subHeaderText: {
+    fontSize: 14,
+    marginBottom: 5,
+    letterSpacing: -1,
+    color: theme.palette.grey003,
+  },
 }));

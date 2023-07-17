@@ -13,7 +13,7 @@ export function MainDrawer() {
     <Drawer.Navigator
       screenOptions={{
         headerShown: false,
-        overlayColor: `${palette.grey003}55`,
+        overlayColor: `${palette.grey002}55`,
         drawerStyle: {width: DRAWER_WIDTH},
         drawerType: 'front',
       }}

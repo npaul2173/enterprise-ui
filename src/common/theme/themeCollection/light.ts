@@ -12,8 +12,8 @@ const lightTheme: ThemeStyles = {
     palette: {
       primaryColor: '#0066FF',
       secondaryColor: '#000088',
-
-      grey003: '#949494',
+      grey002: '#949494',
+      grey003: '#B6B6B6',
       grey004: '#D9D9D9',
       grey005: '#F8F8F8',
       white: '#ffffff',

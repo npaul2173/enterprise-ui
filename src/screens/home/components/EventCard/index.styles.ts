@@ -9,7 +9,7 @@ export const useStyles = themeStyles.create(({theme}) => ({
   },
   companyTitle: {
     fontSize: 16,
-    color: theme.palette.grey003,
+    color: theme.palette.grey002,
   },
   headerText: {
     fontSize: 20,
@@ -27,11 +27,11 @@ export const useStyles = themeStyles.create(({theme}) => ({
   section3Text1: {
     letterSpacing: 1.85,
     fontSize: 10,
-    color: theme.palette.grey003,
+    color: theme.palette.grey002,
     marginRight: 5,
   },
   reportView: {
-    color: theme.palette.grey003,
+    color: theme.palette.grey002,
     letterSpacing: 1.85,
     fontSize: 10,
     marginRight: 10,
