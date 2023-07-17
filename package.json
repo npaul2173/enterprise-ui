@@ -9,6 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "build": "npx react-native build-android --mode=release",
+    "test-build": "yarn android --mode release",
     "remove": "adb uninstall com.revolt",
     "generate-enum": "node src/scripts/fontEnumMaker.js",
     "icons": "npx react-native-asset && yarn run generate-enum",

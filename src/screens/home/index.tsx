@@ -6,6 +6,8 @@ import {EventCard} from './components/EventCard';
 import {MeetingCard} from './components/MeetingCard';
 import {useStyles} from './index.styles';
 import {TextView} from '@common/components/TextView';
+import {AppHeader} from '@common/components/AppHeader';
+import {Container} from '@common/components/Container';
 
 export const Home = ({navigation}: any) => {
   const {styles, cx} = useStyles({});
@@ -15,15 +17,8 @@ export const Home = ({navigation}: any) => {
   const meetings = new Array(10).fill({});
 
   return (
-    <View style={styles.container}>
-      <View style={{marginTop: 10}}>
-        <Button
-          title="open"
-          onPress={() => {
-            navigation.openDrawer();
-          }}
-        />
-      </View>
+    <Container>
+      <AppHeader navType="drawer" />
 
       <View>
         <TextView
@@ -66,6 +61,6 @@ export const Home = ({navigation}: any) => {
           </HStack>
         </View>
       </ScrollView>
-    </View>
+    </Container>
   );
 };
