@@ -3,6 +3,7 @@ import React from 'react';
 import {themeStyles} from '@common/theme';
 import {Home} from '@screens/home';
 import {CustomDrawerContent} from './Custom';
+import {Mail} from '@screens/mail';
 
 export const DRAWER_WIDTH = 320;
 const Drawer = createDrawerNavigator();
@@ -19,10 +20,10 @@ export function MainDrawer() {
       }}
       drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="Feed" component={Home} />
-      <Drawer.Screen name="Settings" component={Home} />
+      {/* <Drawer.Screen name="Settings" component={Home} />
       <Drawer.Screen name="Events" component={Home} />
-      <Drawer.Screen name="Messages" component={Home} />
-      <Drawer.Screen name="Mail" component={Home} />
+      <Drawer.Screen name="Messages" component={Home} /> */}
+      <Drawer.Screen name="Mail" component={Mail} />
     </Drawer.Navigator>
   );
 }
