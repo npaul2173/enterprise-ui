@@ -3,7 +3,10 @@ import {useRef} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import Animated, {
+  Extrapolate,
+  interpolate,
   useAnimatedScrollHandler,
+  useAnimatedStyle,
   useDerivedValue,
   useSharedValue,
   withSpring,
@@ -20,7 +23,7 @@ const Mail = () => {
   const scrollHandler = useAnimatedScrollHandler(event => {
     const currentScrollY = event.contentOffset.y;
     const diff = currentScrollY - prevScrollY.current;
-    console.log('diff-- > ', diff);
+    // console.log('diff-- > ', diff);
 
     if (diff < 0 || currentScrollY <= 0) {
       scrollY.value = withSpring(0, {
@@ -36,10 +39,30 @@ const Mail = () => {
     prevScrollY.current = currentScrollY;
   });
 
+  const headerAnimatedStyles = useAnimatedStyle(() => {
+    const opacity = interpolate(
+      scrollY.value,
+      [0, -HEADER_HEIGHT],
+      [10, 0],
+      Extrapolate.CLAMP,
+    );
+
+    console.log('opacity--- ', opacity, scrollY.value);
+
+    return {
+      // elevation: scrollY.value <= 60 ? 20 : 0,
+      opacity: 1,
+    };
+  });
+
   return (
     <View style={{width: '100%', height: '100%'}}>
       <Animated.View
-        style={[styles.header, {transform: [{translateY: scrollY}]}]}>
+        style={[
+          styles.header,
+          {...headerAnimatedStyles},
+          {transform: [{translateY: scrollY}]},
+        ]}>
         {/* <View style={{width: '100%', backgroundColor: 'white', padding: 20}}> */}
         <TextView style={{fontSize: 20}} variant="bold">
           Header
