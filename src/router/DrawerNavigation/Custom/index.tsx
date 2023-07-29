@@ -1,4 +1,8 @@
-import {DrawerItem, DrawerItemList} from '@react-navigation/drawer';
+import {
+  DrawerContentComponentProps,
+  DrawerItem,
+  DrawerItemList,
+} from '@react-navigation/drawer';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {DRAWER_WIDTH} from '..';
@@ -22,7 +26,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export function CustomDrawerContent(props: any) {
+export function CustomDrawerContent(props: DrawerContentComponentProps) {
+  console.log('Descriptors -----> ', props.descriptors);
+  // console.log('State -----> ', props.state);
+
   return (
     <Stack style={{height: '100%', width: DRAWER_WIDTH}}>
       <Header />
@@ -30,14 +37,14 @@ export function CustomDrawerContent(props: any) {
 
       {/* <DrawerContentScrollView {...props}> */}
       <DrawerItemList {...props} />
-      <DrawerItem
+      {/* <DrawerItem
         label="Close drawer"
         onPress={() => props.navigation.closeDrawer()}
       />
       <DrawerItem
         label="Toggle drawer"
         onPress={() => props.navigation.toggleDrawer()}
-      />
+      /> */}
       <Divider />
 
       {/* </DrawerContentScrollView> */}

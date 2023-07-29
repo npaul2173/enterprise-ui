@@ -27,9 +27,9 @@ export const Messages: React.FC = () => {
         <View>
           <TextView>See all</TextView>
           <Stack spacing={14}>
-            {arr.map(item => {
+            {arr.map((item, index) => {
               return (
-                <HStack justify="between">
+                <HStack key={index} justify="between">
                   <HStack spacing={15} items="center">
                     <Image
                       style={styles.imageView as ImageStyle}
