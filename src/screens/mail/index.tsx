@@ -1,3 +1,4 @@
+import {FluentIconsView} from '@common/components/Icon';
 import {TextView} from '@common/components/TextView';
 import {useRef} from 'react';
 import {StyleSheet, View} from 'react-native';
@@ -39,30 +40,10 @@ const Mail = () => {
     prevScrollY.current = currentScrollY;
   });
 
-  const headerAnimatedStyles = useAnimatedStyle(() => {
-    const opacity = interpolate(
-      scrollY.value,
-      [0, -HEADER_HEIGHT],
-      [10, 0],
-      Extrapolate.CLAMP,
-    );
-
-    console.log('opacity--- ', opacity, scrollY.value);
-
-    return {
-      // elevation: scrollY.value <= 60 ? 20 : 0,
-      opacity: 1,
-    };
-  });
-
   return (
     <View style={{width: '100%', height: '100%'}}>
       <Animated.View
-        style={[
-          styles.header,
-          {...headerAnimatedStyles},
-          {transform: [{translateY: scrollY}]},
-        ]}>
+        style={[styles.header, {transform: [{translateY: scrollY}]}]}>
         {/* <View style={{width: '100%', backgroundColor: 'white', padding: 20}}> */}
         <TextView style={{fontSize: 20}} variant="bold">
           Header
@@ -82,8 +63,9 @@ const Mail = () => {
                   width: 100,
                   margin: 20,
                   backgroundColor: 'skyblue',
-                }}
-              />
+                }}>
+                {/* <FluentIconsView /> */}
+              </View>
             );
           })}
         </KeyboardAwareScrollView>

@@ -3,6 +3,8 @@ import {createIconSetFromIcoMoon} from 'react-native-vector-icons';
 import iconsConfig from '../../../assets/fonts/selection.json';
 import {IconSetEnum} from './enums';
 import {themeStyles} from '@common/theme';
+import FluentIcons from './Fluent';
+
 const Icon = createIconSetFromIcoMoon(iconsConfig);
 
 type IconSetEnumValue = keyof typeof IconSetEnum;
@@ -16,7 +18,7 @@ interface IconViewProps {
   size?: number;
   color?: string;
 }
-export const IconView: React.FC<IconViewProps> = ({name, size, color}) => {
+const IconView: React.FC<IconViewProps> = ({name, size, color}) => {
   const theme = themeStyles.useTheme();
 
   return (
@@ -29,3 +31,5 @@ export const IconView: React.FC<IconViewProps> = ({name, size, color}) => {
     </>
   );
 };
+
+export {FluentIcons as FluentIconsView, IconView};

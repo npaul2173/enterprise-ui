@@ -6,6 +6,7 @@ import {IconView} from '../Icon';
 import {Stack} from 'react-native-flex-layout';
 import {NavigationTypeEnumPremixValue} from './enum';
 import {useNavigation} from '@react-navigation/native';
+import Ripple from 'react-native-material-ripple';
 
 interface AppHeaderProps {
   navType: keyof NavigationTypeEnumPremixValue;
@@ -16,13 +17,22 @@ export const AppHeader: React.FC<AppHeaderProps> = () => {
   const navigation = useNavigation();
   const LeftSection: React.FC = () => {
     return (
-      <Pressable
+      <Ripple
+        rippleContainerBorderRadius={20}
+        style={{height: 40, width: 40}}
         onPress={() => {
           // @ts-ignore
           navigation.openDrawer();
         }}>
         <IconView name="menu" size={10} />
-      </Pressable>
+      </Ripple>
+      // <Pressable
+      //   onPress={() => {
+      //     // @ts-ignore
+      //     navigation.openDrawer();
+      //   }}>
+
+      // </Pressable>
     );
   };
   const RightSection: React.FC = () => {
