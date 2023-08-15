@@ -1,5 +1,8 @@
 export const ImageSource = {
   profilePicture: require('./sampleProfilePicture.png'),
+  background: {
+    gradientIllustration: require('./GradientBackground.png'),
+  },
   sampleUsers: {
     user1: require('./user0104.png'),
     user2: require('./user0203.png'),

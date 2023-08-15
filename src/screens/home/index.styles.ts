@@ -11,6 +11,9 @@ export const useStyles = themeStyles.create(({theme}) => ({
   eventContainer: {
     paddingHorizontal: 20,
   },
+  exploreHeaderContainer: {
+    paddingHorizontal: 30,
+  },
   todayHeaderContainer: {
     padding: 15,
     paddingLeft: 30,
@@ -22,6 +25,6 @@ export const useStyles = themeStyles.create(({theme}) => ({
     fontSize: 14,
     marginBottom: 5,
     letterSpacing: -1,
-    color: theme.palette.grey003,
+    color: theme.palette.grey002,
   },
 }));

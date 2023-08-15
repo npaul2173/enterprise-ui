@@ -4,14 +4,17 @@ import {LinearProgress} from '@common/components/Progress';
 import {Spacing} from '@common/components/Space';
 import {TextView} from '@common/components/TextView';
 import React from 'react';
-import {ScrollView, View} from 'react-native';
+import {Dimensions, Image, ScrollView, View} from 'react-native';
 import {HStack, Stack} from 'react-native-flex-layout';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
+import {ImageSource} from 'src/assets/images';
 import {useCommonStyles} from '../../common/style/commonStyles';
 import {EventCard} from './components/EventCard';
 import {MeetingCard} from './components/MeetingCard';
+import {SearchBar} from './components/SearchBar';
 import {useStyles} from './index.styles';
 
+const {width: screenWidth} = Dimensions.get('screen');
 export const Home = ({navigation}: any) => {
   const {styles, cx} = useStyles({});
   const {styles: commonStyles} = useCommonStyles({});
@@ -25,56 +28,80 @@ export const Home = ({navigation}: any) => {
       <KeyboardAwareScrollView>
         <Stack spacing={30}>
           <Stack>
-            <Stack
-              direction="row"
-              justify="between"
-              items="end"
-              style={styles.todayHeaderContainer}>
-              <Stack direction="row" items="end" spacing={5}>
+            {/* IMAGE BACKGROUND */}
+            <Stack style={{position: 'absolute', top: 0, zIndex: -20}}>
+              <Image
+                style={{height: 400, width: screenWidth}}
+                source={ImageSource.background.gradientIllustration}
+              />
+            </Stack>
+
+            <Stack spacing={20}>
+              <Stack style={styles.exploreHeaderContainer}>
                 <TextView
                   variant="bold"
                   style={cx(styles.headerText, commonStyles.blackText)}>
-                  Today
-                </TextView>
-                <TextView variant="bold" style={cx(styles.subHeaderText)}>
-                  4th Jan
+                  Explore
                 </TextView>
               </Stack>
 
-              <Stack>
+              <Stack style={{paddingHorizontal: 20}}>
+                <SearchBar />
+              </Stack>
+            </Stack>
+
+            <Stack>
+              <Stack
+                direction="row"
+                justify="between"
+                items="end"
+                style={styles.todayHeaderContainer}>
                 <Stack direction="row" items="end" spacing={5}>
                   <TextView
                     variant="bold"
                     style={cx(styles.headerText, commonStyles.blackText)}>
-                    12
+                    Today
                   </TextView>
                   <TextView variant="bold" style={cx(styles.subHeaderText)}>
-                    out of 22
+                    4th Jan
                   </TextView>
                 </Stack>
-                <LinearProgress current={12} total={22} />
-              </Stack>
-            </Stack>
 
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              <HStack
-                style={styles.meetingsContainer}
-                spacing={5}
-                divider={<View />}>
-                {meetings.map((_, index) => {
-                  return (
-                    <Stack
-                      style={{paddingTop: 10}}
-                      spacing={20}
-                      key={index}
-                      divider={<View />}>
-                      <MeetingCard isCurrent={index === 0} />
-                      <MeetingCard />
-                    </Stack>
-                  );
-                })}
-              </HStack>
-            </ScrollView>
+                <Stack>
+                  <Stack direction="row" items="end" spacing={5}>
+                    <TextView
+                      variant="bold"
+                      style={cx(styles.headerText, commonStyles.blackText)}>
+                      12
+                    </TextView>
+                    <TextView variant="bold" style={cx(styles.subHeaderText)}>
+                      out of 22
+                    </TextView>
+                  </Stack>
+                  <LinearProgress current={12} total={22} />
+                </Stack>
+              </Stack>
+
+              <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <HStack
+                  style={styles.meetingsContainer}
+                  spacing={5}
+                  divider={<View />}>
+                  {meetings.map((_, index) => {
+                    return (
+                      <Stack
+                        style={{paddingTop: 10}}
+                        spacing={20}
+                        key={index}
+                        divider={<View />}>
+                        <MeetingCard isCurrent={index === 0} />
+                        <MeetingCard />
+                      </Stack>
+                    );
+                  })}
+                </HStack>
+              </ScrollView>
+            </Stack>
           </Stack>
 
           <Stack>

@@ -11,6 +11,7 @@ export interface ThemeStyles {
       grey003: string;
       grey002: string;
       grey004: string;
+      grey001: string;
     };
     borderRadius: {
       default: number;
