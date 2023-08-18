@@ -20,9 +20,6 @@ export function MainDrawer() {
       }}
       drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="Feed" component={Home} />
-      {/* <Drawer.Screen name="Settings" component={Home} />
-      <Drawer.Screen name="Events" component={Home} />
-      <Drawer.Screen name="Messages" component={Home} /> */}
       <Drawer.Screen name="Mail" component={Mail} />
     </Drawer.Navigator>
   );

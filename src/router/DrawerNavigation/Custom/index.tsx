@@ -1,14 +1,13 @@
-import {
-  DrawerContentComponentProps,
-  DrawerItem,
-  DrawerItemList,
-} from '@react-navigation/drawer';
+import {DrawerContentComponentProps} from '@react-navigation/drawer';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {DRAWER_WIDTH} from '..';
 import {Header} from './Header';
 import {Messages} from './Messages';
 import {Divider, Flex, Spacer, Stack} from 'react-native-flex-layout';
+import DrawerItemList from './DrawerItemsList';
+import {useStyles} from './index.styles';
+import {UserMode} from './UserMode';
 
 const styles = StyleSheet.create({
   container: {
@@ -30,25 +29,15 @@ export function CustomDrawerContent(props: DrawerContentComponentProps) {
   console.log('Descriptors -----> ', props.descriptors);
   // console.log('State -----> ', props.state);
 
+  const {styles} = useStyles({});
   return (
-    <Stack style={{height: '100%', width: DRAWER_WIDTH}}>
+    <Stack style={styles.root}>
       <Header />
-      <Divider />
-
-      {/* <DrawerContentScrollView {...props}> */}
-      <DrawerItemList {...props} />
-      {/* <DrawerItem
-        label="Close drawer"
-        onPress={() => props.navigation.closeDrawer()}
-      />
-      <DrawerItem
-        label="Toggle drawer"
-        onPress={() => props.navigation.toggleDrawer()}
-      /> */}
-      <Divider />
-
-      {/* </DrawerContentScrollView> */}
-      <Messages />
+      <UserMode />
+      {/* <Divider /> */}
+      {/* <DrawerItemList {...props} /> */}
+      {/* <Divider /> */}
+      {/* <Messages /> */}
     </Stack>
   );
 }

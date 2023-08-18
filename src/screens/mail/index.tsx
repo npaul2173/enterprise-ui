@@ -1,14 +1,9 @@
-import {FluentIconsView} from '@common/components/Icon';
 import {TextView} from '@common/components/TextView';
 import {useRef} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import Animated, {
-  Extrapolate,
-  interpolate,
   useAnimatedScrollHandler,
-  useAnimatedStyle,
-  useDerivedValue,
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
