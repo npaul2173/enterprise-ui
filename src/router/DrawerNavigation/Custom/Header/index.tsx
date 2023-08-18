@@ -4,6 +4,8 @@ import {Image, ImageStyle, View} from 'react-native';
 import {HStack, VStack} from 'react-native-flex-layout';
 import {ImageSource} from 'src/assets/images';
 import {useStyles} from './index.styles';
+import {UserStatusOption} from './UserStatusOption';
+
 export const Header = () => {
   const {styles} = useStyles({});
   return (
@@ -15,7 +17,7 @@ export const Header = () => {
           style={styles.profilePictureContainer as ImageStyle}
         />
       </View>
-      <VStack>
+      <VStack spacing={5}>
         <TextView
           variant="bold"
           ellipsizeMode="tail"
@@ -23,9 +25,7 @@ export const Header = () => {
           style={styles.nameTextStyle}>
           Connor Benitez
         </TextView>
-        <TextView variant="light" style={styles.designationTextStyle}>
-          Product designer
-        </TextView>
+        <UserStatusOption />
       </VStack>
     </HStack>
   );

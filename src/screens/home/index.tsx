@@ -11,8 +11,8 @@ import {ImageSource} from 'src/assets/images';
 import {useCommonStyles} from '../../common/style/commonStyles';
 import {EventCard} from './components/EventCard';
 import {MeetingCard} from './components/MeetingCard';
-import {SearchBar} from './components/SearchBar';
 import {useStyles} from './index.styles';
+import {Explore} from './components/Explore';
 
 const {width: screenWidth} = Dimensions.get('screen');
 export const Home = ({navigation}: any) => {
@@ -45,9 +45,7 @@ export const Home = ({navigation}: any) => {
                 </TextView>
               </Stack>
 
-              <Stack style={{paddingHorizontal: 20}}>
-                <SearchBar />
-              </Stack>
+              <Explore />
             </Stack>
 
             <Stack>

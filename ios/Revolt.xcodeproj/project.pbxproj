@@ -16,14 +16,14 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		48F55565842C4E61AB2140F4 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB96F3297E45490292BD1027 /* Inter-Thin.ttf */; };
 		527876AA5F144F6D9C81D043 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10E6D0A0A2864D2CB2EC204A /* Inter-Bold.ttf */; };
-		67106722F8014E49866F900B /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Revolt-RevoltTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Revolt-RevoltTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A23F0D8594924250B1A133F7 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCAF0F497E8F44AB889DFD79 /* Inter-ExtraBold.ttf */; };
 		C5081D222D7946E9B3F3B082 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69ABC46A215D4EA4A5049013 /* Inter-SemiBold.ttf */; };
-		E4E8CB993793491F9DF43D62 /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = BDF1636242754021859AA829 /* selection.json */; };
 		FBC29A92E4C044CD986CF604 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6565C43D31164F86813A0D7F /* Inter-Regular.ttf */; };
 		735B33F626414607918CA439 /* fluent.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E595270C9A645179A2CBB91 /* fluent.ttf */; };
+		5329F5F8E4B345BC82BCFE28 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 856FDA5B05A340D987E352BD /* icomoon.ttf */; };
+		E5392A1F428A4D9C8D7691CC /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = 96162377D8BE4ABCAD6EE49E /* selection.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +58,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Revolt/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Revolt-RevoltTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revolt-RevoltTests.release.xcconfig"; path = "Target Support Files/Pods-Revolt-RevoltTests/Pods-Revolt-RevoltTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5094642D948460D9574132E /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraLight.ttf"; path = "../src/assets/fonts/Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
-		BDF1636242754021859AA829 /* selection.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = selection.json; path = ../src/assets/fonts/selection.json; sourceTree = "<group>"; };
-		CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		EB96F3297E45490292BD1027 /* Inter-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Thin.ttf"; path = "../src/assets/fonts/Inter-Thin.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FCAF0F497E8F44AB889DFD79 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-ExtraBold.ttf"; path = "../src/assets/fonts/Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0E595270C9A645179A2CBB91 /* fluent.ttf */ = {isa = PBXFileReference; name = "fluent.ttf"; path = "../src/assets/fonts/fluent.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		856FDA5B05A340D987E352BD /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../src/assets/fonts/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		96162377D8BE4ABCAD6EE49E /* selection.json */ = {isa = PBXFileReference; name = "selection.json"; path = "../src/assets/fonts/selection.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +168,9 @@
 				6565C43D31164F86813A0D7F /* Inter-Regular.ttf */,
 				69ABC46A215D4EA4A5049013 /* Inter-SemiBold.ttf */,
 				EB96F3297E45490292BD1027 /* Inter-Thin.ttf */,
-				CF05CFB9E6F8426DAA2FE4D0 /* icomoon.ttf */,
-				BDF1636242754021859AA829 /* selection.json */,
 				0E595270C9A645179A2CBB91 /* fluent.ttf */,
+				856FDA5B05A340D987E352BD /* icomoon.ttf */,
+				96162377D8BE4ABCAD6EE49E /* selection.json */,
 			);
 			name = Resources;
 			path = "";
@@ -290,9 +290,9 @@
 				FBC29A92E4C044CD986CF604 /* Inter-Regular.ttf in Resources */,
 				C5081D222D7946E9B3F3B082 /* Inter-SemiBold.ttf in Resources */,
 				48F55565842C4E61AB2140F4 /* Inter-Thin.ttf in Resources */,
-				67106722F8014E49866F900B /* icomoon.ttf in Resources */,
-				E4E8CB993793491F9DF43D62 /* selection.json in Resources */,
 				735B33F626414607918CA439 /* fluent.ttf in Resources */,
+				5329F5F8E4B345BC82BCFE28 /* icomoon.ttf in Resources */,
+				E5392A1F428A4D9C8D7691CC /* selection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

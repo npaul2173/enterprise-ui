@@ -20,7 +20,7 @@ export const SearchBar = () => {
       <TextView style={cx(styles.placeholder)}>
         Search Projects, Tasks, and More
       </TextView>
-      <IconView size={15} name="menu" color={theme.palette.grey002} />
+      <IconView size={18} name="search" color={theme.palette.grey002} />
     </Stack>
   );
 };
